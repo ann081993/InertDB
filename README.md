@@ -1,2 +1,14 @@
 # InertDB
-Repository for InertDB, a resource of biologically inactive small molecules
+
+## About InertDB
+- InertDB ....
+- Composed of two compounds CICs and GICs
+    - CICs:
+    - ``` asdfasdf ```
+    - GICs:
+
+- If you use InertDB in your research, please considering citing our papers:
+Seungchan An et al., InertDB as a source of ...
+
+## Applications
+
