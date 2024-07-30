@@ -31,5 +31,14 @@ This project is licensed under the MIT License.
 
 ## Please cite:
 - If you use InertDB in your research, please considering citing the following publication:
-
-Seungchan An et al., InertDB as a Resource of Biologically Inactive Small Molecules.
+```
+@article{An2024,
+    author    = {An et al.,},
+    title     = {InertDB: A Comprehensive Database of Biologically Inactive Compounds},
+    doi       = {10.xxxx},
+    journal   = {xxx}
+    year      = {2024},
+    volume    = {x},
+    pages     = {x--x},
+}
+```
