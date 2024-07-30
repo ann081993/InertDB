@@ -1,13 +1,14 @@
+InertDB: A Comprehensive Database of Biologically Inactive Compounds
+=============
+This is an H1
+=============
+
+
 # InertDB: A Comprehensive Database of Biologically Inactive Compounds
 
-<p align="center">InertDB: A Comprehensive Database of Biologically Inactive Compounds</p>
-
 <p align="center">
-  <img src="/GA.png" width="80%" height="80%" title="InertDB">
+  <img src="/GA.png" width="75%" height="75%" title="InertDB-overview">
 </p>
-
-
-<img src="/GA.png" width="80%" height="80%" title="InertDB"></img>
 
 ### Overview
 InertDB is a curated database designed to serve as a comprehensive resource for biologically inactive small molecules. This database can be utilized in AI-assisted drug discovery and predictive modeling, providing a unique collection of compounds identified as inactive across diverse bioassays from PubChem. InertDB aims to enhance the robustness and accuracy of machine learning models in toxicology and pharmacology by offering a reliable set of inactive compounds.
