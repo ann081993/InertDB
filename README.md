@@ -1,5 +1,12 @@
 # InertDB: A Comprehensive Database of Biologically Inactive Compounds
 
+<p align="center">InertDB: A Comprehensive Database of Biologically Inactive Compounds</p>
+
+<p align="center">
+  <img src="/GA.png" width="80%" height="80%" title="InertDB">
+</p>
+
+
 <img src="/GA.png" width="80%" height="80%" title="InertDB"></img>
 
 ### Overview
@@ -9,6 +16,11 @@ InertDB is a curated database designed to serve as a comprehensive resource for 
 - Curated Inactive Compounds (`CICs`): 3,205 compounds identified as inactive from the PubChem database after extensive curation and analysis of bioassay results.
 - Generated Inactive Compounds (`GICs`): 64,368 potential inactive compounds generated using deep generative AI, trained on the CICs to expand the chemical space.
 - Bioassay Diversity Metrics: Implementation of novel metrics like Dassay and Nassay to evaluate the diversity of bioassays, ensuring a comprehensive selection of inactive compounds.
+
+### Download
+```sh
+wget https://github.com/username/InertDB/releases/download/v1.0/InertDB_dataset.zip
+```
 
 ### Key applications
 1. Virtual Screening: Use InertDB as an extensive library for virtual screening to identify pharmacologically active compounds while minimizing the risk of off-target effects.
