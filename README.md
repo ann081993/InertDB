@@ -6,15 +6,13 @@
 
 ## Overview
 InertDB
-- Is a curated database designed to serve as a comprehensive resource for biologically inactive small molecules
-- Provides a unique collection of compounds identified as inactive across diverse bioassays from PubChem
-- Can be utilized in AI-assisted drug discovery and predictive modeling
-- Aims to enhance the robustness and accuracy of machine learning models in toxicology and pharmacology by offering a reliable set of inactive compounds
+- Aims to enhance the robustness and accuracy of machine learning models in toxicology and pharmacology
+- Offers a comprehensive resource for biologically inactive small molecules
+- Provides inactive compounds curated curated from [PubChem](https://pubchem.ncbi.nlm.nih.gov/)
 
 ## Inactive compounds
 - **Curated Inactive Compounds** (`CICs`): 3,205 compounds identified as inactive from the PubChem database after extensive curation and analysis of bioassay results.
 - **Generated Inactive Compounds** (`GICs`): 64,368 potential inactive compounds generated using deep generative AI, trained on the CICs to expand the chemical space.
-- Bioassay Diversity Metrics: Implementation of novel metrics like Dassay and Nassay to evaluate the diversity of bioassays, ensuring a comprehensive selection of inactive compounds.
 
 ## Download
 ```sh
@@ -23,9 +21,8 @@ wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.
 ```
 
 ## Key applications
-- Virtual Screening: Use InertDB as an extensive library for virtual screening to identify pharmacologically active compounds while minimizing the risk of off-target effects.
 - Predictive Modeling: Enhance the performance of machine learning models in predicting biological activity by incorporating reliable inactive compounds from InertDB.
-- Chemical Space Exploration: Analyze the unique chemical space of inactive compounds, contributing to a better understanding of structure-activity relationships.
+- Virtual Screening: Use InertDB as an extensive library for virtual screening to identify pharmacologically active compounds while minimizing the risk of off-target effects.
 
 ## Please cite:
 - If you use InertDB in your research, please considering citing the following publication:
@@ -43,3 +40,4 @@ wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.
 
 ## License
 This project is licensed under the MIT License.
+
