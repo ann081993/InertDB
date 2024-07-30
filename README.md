@@ -26,9 +26,6 @@ wget https://github.com/username/InertDB/releases/download/v1.0/InertDB_dataset.
 - Predictive Modeling: Enhance the performance of machine learning models in predicting biological activity by incorporating reliable inactive compounds from InertDB.
 - Chemical Space Exploration: Analyze the unique chemical space of inactive compounds, contributing to a better understanding of structure-activity relationships.
 
-## License
-This project is licensed under the MIT License.
-
 ## Please cite:
 - If you use InertDB in your research, please considering citing the following publication:
 ```
@@ -42,3 +39,6 @@ This project is licensed under the MIT License.
     pages     = {x--x},
 }
 ```
+
+## License
+This project is licensed under the MIT License.
