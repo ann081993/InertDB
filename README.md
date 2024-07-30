@@ -18,7 +18,8 @@ InertDB
 
 ## Download
 ```sh
-wget https://github.com/username/InertDB/releases/download/v1.0/InertDB_dataset.zip
+wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cics.txt
+wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt
 ```
 
 ## Key applications
