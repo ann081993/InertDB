@@ -1,4 +1,5 @@
-# InertDB: A Comprehensive Database of Biologically Inactive Compounds
+# InertDB:
+A Comprehensive Database of Biologically Inactive Compounds
 
 <p align="center">
   <img src="/GA.png" width="75%" height="75%" title="InertDB-overview">
