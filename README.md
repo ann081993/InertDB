@@ -71,5 +71,5 @@ This repo provides:
 ```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/ann081993/InertDB/blob/main/LICENSE) for details.
+This curated dataset is freely available for academic and non-commercial research purposes. For commercial use, a license agreement is required. Please contact [ann081993 at snu dot ac dot kr] for or refer to the [LICENSE](https://github.com/ann081993/InertDB/blob/main/LICENSE) for details.
 
