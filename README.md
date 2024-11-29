@@ -6,50 +6,62 @@ A Comprehensive Database of Biologically Inactive Compounds
 </p>
 
 ## Overview
-**InertDB** is a curated chemical database that addresses the lack of data on biologically inactive compounds, a critical gap for predictive models in AI-based drug discovery. Traditional datasets often exhibit a publication bias favoring active compounds, limiting the diversity of training data for predictive models. InertDB provides access to both curated inactive compounds (CICs) identified from PubChem and generated inactive compounds (GICs) derived using deep generative AI.
-- **CICs**: 3,205 inactive compounds rigorously curated from [PubChem BioAssays](https://pubchem.ncbi.nlm.nih.gov/docs/bioassays).
-- **GICs**: 64,368 potential inactive compounds generated using deep generative AI trained on the CICs.
+**InertDB** is a curated chemical database designed to address the lack of biologically inactive compounds in predictive modeling for AI-based drug discovery. This limitation often leads to biased datasets dominated by active compounds, reducing the diversity and robustness of machine learning models.
+InertDB bridges this gap by providing:
+- [**Curated Inactive Compounds (CICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cic_v2024.03.smi): 3,205 inactive compounds rigorously curated from [PubChem BioAssays](https://pubchem.ncbi.nlm.nih.gov/docs/bioassays).
+- [**Generated Inactive Compounds (GICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gic_v2024.03.smi): 64,368 potential inactive compounds generated using deep generative AI trained on the CICs.
 By offering a comprehensive resource for biologically inactive small molecules and expanding the chemical space with GICs, Inert DB aims to enhance the robustness and accuracy of predictive AI models in toxicology and pharmacology.
 
 ## Key Features
-- [**Curated Inactive Compounds (CICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cic_v2024.03.smi): Extracted from over 260 million bioassay results, ensuring high assay diversity.
-- [**Generated Inactive Compounds (GICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gic_v2024.03.smi): Developed using RNN-based depp generative models to supplement chemical space.
-- **Reduced PAINS**: A low proportion of PAINS to minimize false positives in high-throughput screening.
-- **Drug-like Properties**: Majority of the CICs exhibit comparable physicochemical properties to approved drugs.
-- **Validation-Backed**: Demonstrated improved performance in predictive models using benchmark datasets ([LIT-PCBA](https://drugdesign.unistra.fr/LIT-PCBA/) and [MUV](https://www.tu-braunschweig.de/en/pharmchem/forschung/baumann/translate-to-english-muv))
-
-## Applications
-- *False Positive Reduction* in **Virtual Screening Library**: Provides a rich set of structurally diverse and pharmacologically relevant inactive compounds, while minimizing off-target activities, improving the precision of drug discovery efforts. 
-- **AI-Driven Drug Discovery** (predictive modeling, QSAR, molecular property prediction ...): Enhances predictive models by addressing bioactivity bias and supplementing training data with reliable inactive compunds.
-- Predictive Modeling: Enhance the performance of machine learning models in predicting biological activity by incorporating reliable inactive compounds from InertDB.
+- Diverse Assays: **CICs** are extracted from over 260 million PubChem bioassay results, leveraging an NLP-based assay diversity metric.
+- AI-Generated Inactives: **GICs** supplement chemical space using RNN-based deep generative AI (`inertdb_generator.py`).
+- Low PAINS Content: Minimizes frequent false positives in high-throughput screening.
+- Drug-Like Properties: CICs exhibit physicochemical properties comparable to approved drugs.
+- Validated Performance: Predictive modeling benchmarks ([LIT-PCBA](https://drugdesign.unistra.fr/LIT-PCBA/) and [MUV](https://www.tu-braunschweig.de/en/pharmchem/forschung/baumann/translate-to-english-muv)) show significant improvements.
 
 ## Repository Structure
-
-
-## Usage
-This repo provides:
-- Pre-processed datasets of CICs and GICs for predictive model development.
-- Scripts to generate additional GICs using a trained generative AI model.
-
-### 1. Download InertDB compounds
-```bash
-wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cics.txt
-wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt
+```
+InertDB/
+├── data/                 # Pre-processed datasets of CICs and GICs
+│   ├── inertdb_cic_v2024.03.smi
+│   ├── inertdb_gic_v2024.03.smi
+│
+├── inertdb_generator.py  # Script for generating additional GICs
+├── README.md             # Project documentation (this file)
 ```
 
-### 2. Generate GICs
-1. Requirements
+## Usage
+### 1. Download Pre-Processed InertDB Datasets
+Download the CICs and GICs datasets:
+```bash
+wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cic_v2024.03.smi
+wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gic_v2024.03.smi
+```
+
+### 2. Generate Additional GICs
+Use the provided script to generate new GICs using the pre-trained generative AI model.
+#### 1. Requirements
+Ensure the following Python packages are installed:
 - `tensorflow`
 - `numpy`
 - `rdkit`
 
-2. Scripts
+#### 2. Run the Script
+Generate additional GICs by specifying the number of iterations:
 ```bash
-python scripts/inertdb_generator.py -n NUM_GENERATIONS
+python inertdb_generator.py -n NUM_GENERATIONS -o OUTPUT_FILE
 ```
+- `NUM_GENERATIONS`: Number of iterations to generate (each iteration produces 1,000 SMILES).
+- `OUTPUT_FILE`: Name of the file to save the generated GICs (default: `gic.txt`).
+
+Example:
+```bash
+python inertdb_generator.py -n 5 -o my_gics.txt
+```
+This generates up to 5,000 SMILES strings and saves the valid, unique SMILES to `my_gics.txt`.
 
 ## Citation
-- If you use InertDB in your research, please considering citing the following publication:
+- If you use **InertDB** in your research, please considering citing the following publication:
 ```
 @article{An2024,
     author    = {An et al.},
