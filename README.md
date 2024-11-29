@@ -65,7 +65,7 @@ This generates up to 5,000 SMILES strings and saves the valid, unique SMILES to 
 ```
 @article{An2024,
     author    = {An et al.},
-    title     = {InertDB: A Comprehensive Database of Biologically Inactive Compounds},
+    title     = {InertDB as a resource of biologically inactive small molecules},
     doi       = {10.xxxx},
     journal   = {xxx}
     year      = {2024},
