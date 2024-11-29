@@ -25,14 +25,19 @@ By offering a comprehensive resource for biologically inactive small molecules a
 
 ## Repository Structure
 
-## Download
-### Only InertDB compounds
+
+## Usage
+This repo provides:
+- Pre-processed datasets of CICs and GICs for predictive model development.
+- Scripts to generate additional GICs using a trained generative AI model.
+
+### 1. Download InertDB compounds
 ```bash
 wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cics.txt
 wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt
 ```
 
-### Getting started with generative AI for inactive compounds
+### 2. Generate GICs
 1. Clone the repository:
 ```bash
 git clone https://github.com/ann081993/InertDB.git
@@ -42,19 +47,10 @@ cd InertDB
 ```bash
 pip install -r requirements.txt
 ```
-3. Explore the data: the CICs and GICs are available in the `data/` directory as `.txt` files.
-```python
-cics = pd.read.csv("data/CICs.csv")
-```
-4. Generate new inactive compounds: use the `generate.py` script to generate additional inactive compounds
+3. Generate new inactive compounds: use the `generate.py` script to generate additional inactive compounds
 ```bash
 python scripts/generate.py --adu ?????????????????
 ```
-
-## Usage
-This repo provides:
-- Pre-processed datasets of CICs and GICs for predictive model development.
-- Scripts to generate additional GICs using a trained generative AI model.
 
 ## Citation
 - If you use InertDB in your research, please considering citing the following publication:
