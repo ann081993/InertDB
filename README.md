@@ -43,10 +43,15 @@ wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gic_v
 ### 2. Generate Additional GICs
 Use the provided script to generate new GICs using the pre-trained generative AI model.
 #### 1. Requirements
-Ensure the following Python packages are installed:
+Ensure the following Python packages are installed, or install the dependencies from `requirements.txt`:
 - `tensorflow`
 - `numpy`
 - `rdkit`
+```bash
+conda create -n inertdb python=3.10
+conda activate inertdb
+pip install -r requirements.txt
+```
 
 #### 2. Run the Script
 Generate additional GICs by specifying the number of iterations:
