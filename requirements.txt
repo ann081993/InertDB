@@ -1,0 +1,5 @@
+numpy==1.24.3
+tensorflow==2.12.1
+rdkit-pypi==2022.9.5
+scipy==1.12.0
+tqdm==4.67.1
