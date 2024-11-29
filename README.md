@@ -38,18 +38,14 @@ wget https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.
 ```
 
 ### 2. Generate GICs
-1. Clone the repository:
+1. Requirements
+- `tensorflow`
+- `numpy`
+- `rdkit`
+
+2. Scripts
 ```bash
-git clone https://github.com/ann081993/InertDB.git
-cd InertDB
-```
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-3. Generate new inactive compounds: use the `generate.py` script to generate additional inactive compounds
-```bash
-python scripts/generate.py --adu ?????????????????
+python scripts/inertdb_generator.py -n NUM_GENERATIONS
 ```
 
 ## Citation
