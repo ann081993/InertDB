@@ -7,13 +7,13 @@ A Comprehensive Database of Biologically Inactive Compounds
 
 ## Overview
 **InertDB** is a curated chemical database that addresses the lack of data on biologically inactive compounds, a critical gap for predictive models in AI-based drug discovery. Traditional datasets often exhibit a publication bias favoring active compounds, limiting the diversity of training data for predictive models. InertDB provides access to both curated inactive compounds (CICs) identified from PubChem and generated inactive compounds (GICs) derived using deep generative AI.
-- [**CICs**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt): 3,205 inactive compounds rigorously curated from [PubChem BioAssays](https://pubchem.ncbi.nlm.nih.gov/docs/bioassays).
-- [**GICs**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt): 64,368 potential inactive compounds generated using deep generative AI trained on the CICs.
+- **CICs**: 3,205 inactive compounds rigorously curated from [PubChem BioAssays](https://pubchem.ncbi.nlm.nih.gov/docs/bioassays).
+- **GICs**: 64,368 potential inactive compounds generated using deep generative AI trained on the CICs.
 By offering a comprehensive resource for biologically inactive small molecules and expanding the chemical space with GICs, Inert DB aims to enhance the robustness and accuracy of predictive AI models in toxicology and pharmacology.
 
 ## Key Features
-- [**Curated Inactive Compounds (CICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt): Extracted from over 260 million bioassay results, ensuring high assay diversity.
-- [**Generated Inactive Compounds (GICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gics.txt): Developed using RNN-based depp generative models to supplement chemical space.
+- [**Curated Inactive Compounds (CICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_cic_v2024.03.smi): Extracted from over 260 million bioassay results, ensuring high assay diversity.
+- [**Generated Inactive Compounds (GICs)**](https://raw.githubusercontent.com/ann081993/InertDB/main/data/inertdb_gic_v2024.03.smi): Developed using RNN-based depp generative models to supplement chemical space.
 - **Reduced PAINS**: A low proportion of PAINS to minimize false positives in high-throughput screening.
 - **Drug-like Properties**: Majority of the CICs exhibit comparable physicochemical properties to approved drugs.
 - **Validation-Backed**: Demonstrated improved performance in predictive models using benchmark datasets ([LIT-PCBA](https://drugdesign.unistra.fr/LIT-PCBA/) and [MUV](https://www.tu-braunschweig.de/en/pharmchem/forschung/baumann/translate-to-english-muv))
