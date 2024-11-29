@@ -75,12 +75,9 @@ This generates up to 5,000 SMILES strings and saves the valid, unique SMILES to 
 ```
 
 ## License
-This curated dataset is freely available for academic and non-commercial research purposes. For commercial use, a license agreement is required. Please contact [ann081993 at snu dot ac dot kr] for or refer to the [LICENSE](https://github.com/ann081993/InertDB/blob/main/LICENSE) for details.
-
-Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
-
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
+This curated dataset is freely available for academic and non-commercial research purposes. For commercial use, a license agreement is required. Please contact [ann081993 at snu dot ac dot kr] for or refer to the [LICENSE](https://github.com/ann081993/InertDB/blob/main/LICENSE) for details.
 
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 
