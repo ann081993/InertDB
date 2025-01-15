@@ -11,7 +11,6 @@ A Comprehensive Database of Biologically Inactive Compounds
 InertDB bridges this gap by providing:
 - [**Curated Inactive Compounds (CICs)**](https://github.com/ann081993/InertDB/blob/main/data/inertdb_cic_v2024.03.smi): 3,205 inactive compounds rigorously curated from [PubChem BioAssays](https://pubchem.ncbi.nlm.nih.gov/docs/bioassays).
 - [**Generated Inactive Compounds (GICs)**](https://github.com/ann081993/InertDB/blob/main/data/inertdb_gic_v2024.03.smi): 64,368 potential inactive compounds generated using deep generative AI trained on the CICs.
-- 
 By offering a comprehensive resource for biologically inactive small molecules and expanding the chemical space with GICs, Inert DB aims to enhance the robustness and accuracy of predictive AI models in toxicology and pharmacology.
 
 ## Key Features
