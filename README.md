@@ -69,14 +69,15 @@ This generates up to 5,000 SMILES strings and saves the valid, unique SMILES to 
 ## Citation
 - If you use **InertDB** in your research, please considering citing the following publication:
 ```
-@article{An2024,
-    author    = {An et al.},
-    title     = {InertDB as a resource of biologically inactive small molecules},
-    doi       = {10.xxxx},
-    journal   = {xxx}
-    year      = {2024},
-    volume    = {x},
-    pages     = {x--x},
+@article{An2025,
+  author    = {Seungchan An and Yeonjin Lee and Junpyo Gong and Seokyoung Hwang and In Guk Park and Jayhyun Cho and Min Ju Lee and Minkyu Kim and Yun Pyo Kang and Minsoo Noh},
+  title     = {InertDB as a generative AI-expanded resource of biologically inactive small molecules from PubChem},
+  journal   = {Journal of Cheminformatics},
+  year      = {2025},
+  volume    = {17},
+  pages     = {49},
+  doi       = {10.1186/s13321-025-00999-1},
+  url       = {https://doi.org/10.1186/s13321-025-00999-1}
 }
 ```
 
